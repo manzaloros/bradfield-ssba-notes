@@ -148,4 +148,4 @@
 | --------------- | --------------------- | ----------- | ---------------- |
 | 1142845544      | 4025655298            | 44800       | 48134            |
 
-Todo: floating point. Can do the bitmap stretch goal if you have time leftover.
+# Todo: IEEE floating point. Can do the bitmap stretch goal if you have time leftover. ASCII.

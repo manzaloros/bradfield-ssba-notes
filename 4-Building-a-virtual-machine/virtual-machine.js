@@ -34,6 +34,9 @@ const REGISTER3 = 0x03;
 const REGISTER4 = 0x04;
 const FLAG_REGISTER = 0x05;
 
+/*
+  All instructions are 3 lines apart
+*/
 const vm = (/* 20 bytes, number[] */ memory) => {
   /* 16 bit registers */
   const registers = [0, 0, 0, 0, 0, 0];
@@ -51,6 +54,11 @@ const vm = (/* 20 bytes, number[] */ memory) => {
     let param1 = memory[programCounter + 1];
     let param2 = memory[programCounter + 2];
 
+    /*
+      TODO: improve this by
+      1. separating functions from switch statements
+      2. Remove unused functions
+    */
     switch (currentInstruction) {
       case OP_CODES.LOAD:
         /* Load 2 8-bit memory slots into 1 16-bit register */

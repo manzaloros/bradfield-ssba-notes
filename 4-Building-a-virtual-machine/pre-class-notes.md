@@ -7,3 +7,6 @@
 
 - `switch` will execute all `case` blocks after the first matched `case` block
   if you don't add a `break;` statement! It doesn't `break` automatically
+
+- `node --print-bytecode FILENAME.js --filter=FUNCTION_NAME >
+newFile.txt` to see Node bytecode filtered for `FUNCTION_NAME`.

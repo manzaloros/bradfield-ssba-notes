@@ -1,5 +1,10 @@
 # Programming the actual computer
 
+- To run the hello world prework file, `nasm -fmacho64 hello_mac.asm && ld
+-lSystem -L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib
+hello_mac.o && ./a.out`
+- `db "hello, world", 10`: the `10` is the newline character!
+
 ## Floating Point
 
 - Why do we want big numbers, but the bigger the number, the less precision we
@@ -25,6 +30,7 @@
 
 ## Character Encodings, ASCII
 
+- [Best ASCII chart is the one from Wikipedia](https://en.wikipedia.org/wiki/ASCII#/media/File:USASCII_code_chart.png)
 - ASCII is american
   - character fits in a byte
   - 128 possible ASCII values
